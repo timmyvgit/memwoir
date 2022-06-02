@@ -7,9 +7,10 @@ body {
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 70px;
     font-family: 'Poppins', sans-serif;
     text-align: center;
+    margin: 60px;
 }
 
 .login-page {
@@ -23,7 +24,7 @@ h1 {
     z-index: 1;
     background: slategray;
     max-width: 360px;
-    margin: 100px auto 100px;
+    margin: 0px auto 100px;
     padding: 45px;
     text-align: center;
 }
@@ -72,9 +73,24 @@ h1 {
 .form .registerform {
     display: none;
 }
+.div .prompt_box{
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    align-self: center;
+    font-size: 14px;
+}
+.prompt_response{
+    color:white;
+    display: none;
+    height: 350px;
+    width: 350px;
+}
 
 .timer {
     font-family: 'Poppins', sans-serif;
+    border-width: 100px;
+    border-color: darkslategray;
     width: 250px;
     padding: 24px 32px; 
     background: white;
@@ -94,12 +110,12 @@ h1 {
     border-radius: 50%;
     border: none;
     color: white;
-    background: #8208e6;
+    background: lightsteelblue;
     cursor: pointer;
 }
 
 .timer__btn--start {
-    background: #00b84c;
+    background: green;
 }
 
 .timer__btn--stop {

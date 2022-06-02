@@ -95,17 +95,18 @@ new Timer(
 
 function prompt_ready() {
   $('#timer').show();
-  $('#prompt').show();
+  $('#promptbox').show();
   $('#registerform').hide();
   $('#loginform').hide();
+  $('#prompt_div').show();
   prompt();
 }
 
 function prompt() {
-  var questions = ['', 'Have you ever made mayonase', 'Have you ever made Ketchup', 'Can you repickle pickles'];
+  var questions = ['', 'What did you do five years ago?', 'Have you ever made Ketchup', 'Can you repickle pickles?'];
 
-  var random = Math.floor((Math.random() * 3) + 1);
-  //alert(questions[random]);
-  $('#prompt_box').html(questions[random]);
+  var random = Math.floor((Math.random() * questions.length));
+  //alert(questions[]);
+  $('#prompt_question').html(questions[random]);
 
 }
